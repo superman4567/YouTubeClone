@@ -10,13 +10,17 @@
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/video.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
   </head>
   <body>
     <div class="header">
       <!--Dropwon with YT logo-->
       <div class="left-section">
         <img class="hamburger-menu" src="../YouTubeClone/Channel-pictures/icons/hamburger-menu.svg">
-        <img class="youtube-logo" src="../YouTubeClone/Channel-pictures/icons/youtube-logo.svg">
+        <div class="youtube-logo-container">
+          <img class="youtube-logo" src="../YouTubeClone/Channel-pictures/icons/youtube-logo.svg">
+          <div class="tooltip">YouTube Logo</div>
+        </div>
       </div>
 
       <!--searchbar-->
@@ -24,27 +28,82 @@
         <input class="search-bar" type="text" placeholder="Search">
         <button class="search-button">
           <img class="search-icon" src="../YouTubeClone/Channel-pictures/icons/search.svg">
+          <div class="tooltip">Search</div>
         </button>
         <button class="voice-search-button">
           <img class="voice-search-icon" src="../YouTubeClone/Channel-pictures/icons/voice-search-icon.svg">
+          <div class="tooltip">Search with your voice</div>
         </button>
       </div>
 
       <!--Right icons-->
       <div class="right-section">
-        <img class="upload-icon" src="../YouTubeClone/Channel-pictures/icons/upload.svg">
-        <img class="youtube-apps" src="../YouTubeClone/Channel-pictures/icons/youtube-apps.svg">
-        <img class="notification-icon" src="../YouTubeClone/Channel-pictures/icons/notifications.svg">
-        <img class="current-user-picture" src="../YouTubeClone/Channel-pictures/channels4_profile.jpg">
+
+        <div class="upload-icon-container">
+          <img class="upload-icon" src="../YouTubeClone/Channel-pictures/icons/upload.svg">
+          <div class="tooltip">Upload a video</div>
+        </div>
+
+        <div class="youtube-apps-container">
+          <img class="youtube-apps" src="../YouTubeClone/Channel-pictures/icons/youtube-apps.svg">
+          <div class="tooltip">YouTube Apps 🤠</div>
+        </div>
+          
+        <div class="notifications-container">
+          <div class="notifications-icon-container">
+            <img class="notification-icon" src="../YouTubeClone/Channel-pictures/icons/notifications.svg">
+            <div class="notification-count">3</div>
+          </div>  
+          <div class="tooltip">Apps</div>
+        </div>
+        
+        <div class="current-user-picture-container">
+          <img class="current-user-picture" src="../YouTubeClone/Channel-pictures/channels4_profile.jpg">
+          <div class="tooltip">Profile Picture Apps</div>
+        </div>
+        
       </div>
     </div>
     
-    
-    <div style="background-color: rgb(245,245,245); padding: 10px;"  class="video-grid">
+    <div class="sidebar">
+      <div class="sidebar-link">
+        <img src="../YouTubeClone/Channel-pictures/icons/home.svg">
+        <div>Home</div>
+      </div>
+
+      <div class="sidebar-link">
+        <img src="../YouTubeClone/Channel-pictures/icons/explore.svg">
+        <div>Explore</div>
+      </div>
+
+      <div class="sidebar-link">
+        <img src="../YouTubeClone/Channel-pictures/icons/subscriptions.svg">
+        <div>Subscriptions</div>
+      </div>
+
+      <div class="sidebar-link">
+        <img src="../YouTubeClone/Channel-pictures/icons/originals.svg">
+        <div>Originals</div>
+      </div>
+
+      <div class="sidebar-link">
+        <img src="../YouTubeClone/Channel-pictures/icons/youtube-music.svg">
+        <div>YouTube Music</div>
+      </div>
+
+      <div class="sidebar-link">
+        <img src="../YouTubeClone/Channel-pictures/icons/library.svg">
+        <div>Library</div>
+      </div>
+    </div>
+
+    <div class="video-grid">
+
       <!--First video-->
       <div class="video-preview">
         <div class="thumbnail-row">
           <img class="thumbnail" src="Thumbnails/hq720.webp">
+          <div class="video-time">3:03</div>
         </div>
         <div class="video-info-grid">
           <div class="channel-picture">
@@ -68,6 +127,7 @@
       <div class="video-preview">
         <div class="thumbnail-row">
           <img class="thumbnail" src="Thumbnails/hq1720.webp">
+          <div class="video-time">4:47</div>
         </div>
         <div class="video-info-grid">
           <div class="channel-picture">
@@ -91,6 +151,7 @@
       <div class="video-preview">
         <div class="thumbnail-row">
           <img class="thumbnail" src="Thumbnails/hq2720.webp">
+          <div class="video-time">1:59</div>
         </div>
         <div class="video-info-grid">
           <div class="channel-picture">
@@ -114,6 +175,7 @@
       <div class="video-preview">
         <div class="thumbnail-row">
           <img class="thumbnail" src="Thumbnails/hq3720.webp">
+          <div class="video-time">69:33</div>
         </div>
         <div class="video-info-grid">
           <div class="channel-picture">
@@ -137,6 +199,7 @@
       <div class="video-preview">
         <div class="thumbnail-row">
           <img class="thumbnail" src="Thumbnails/hq4720.webp">
+          <div class="video-time">4:03</div>
         </div>
         <div class="video-info-grid">
           <div class="channel-picture">
@@ -160,6 +223,7 @@
       <div class="video-preview">
         <div class="thumbnail-row">
           <img class="thumbnail" src="Thumbnails/hq5720.webp">
+          <div class="video-time">87:56</div>
         </div>
         <div class="video-info-grid">
           <div class="channel-picture">
@@ -183,6 +247,7 @@
       <div class="video-preview">
         <div class="thumbnail-row">
           <img class="thumbnail" src="Thumbnails/hq5720.webp">
+          <div class="video-time">15:20</div>
         </div>
         <div class="video-info-grid">
           <div class="channel-picture">
@@ -206,6 +271,7 @@
       <div class="video-preview">
         <div class="thumbnail-row">
           <img class="thumbnail" src="Thumbnails/hq5720.webp">
+          <div class="video-time">6:01</div>
         </div>
         <div class="video-info-grid">
           <div class="channel-picture">
